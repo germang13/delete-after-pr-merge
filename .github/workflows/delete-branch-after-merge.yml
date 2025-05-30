@@ -7,7 +7,7 @@ on:
 jobs:
   delete-branch:
     name: Delete Branch
-    runs-on: [self-hosted, eng, dev]
+    runs-on: ubuntu-latest
     steps:
       - name: Delete branch
         run: |
