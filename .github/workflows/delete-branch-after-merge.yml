@@ -9,6 +9,8 @@ jobs:
     name: Delete Branch
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: Delete branch
         run: |
           git push origin --delete ${{ github.event.pull_request.head.ref }}
